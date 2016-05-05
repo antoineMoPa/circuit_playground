@@ -7,18 +7,12 @@
 *********************************************************
 *==============  Begin SPICE netlist of main design ============
 
-*.include /home/antoine/spice_models/2N7000.mod
 .model test nmos
 
 RD 3 2 1  
-VGS 0 1 DC 1V
+IGS 0 1 DC 1
 VDS 3 0 DC 1V
 MQ1 (2 1 0 none) test
-
-*.print dc v(2)
-*sweep 5 VDS=1,5
-*dc VGS 0 5 1m >>data.out
-*go
 
 .end
 
