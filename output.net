@@ -11,14 +11,14 @@
 .model test nmos
 
 RD 3 2 1  
-IG 0 1 1
+VGS 0 1 DC 1V
 VDS 3 0 DC 1V
 MQ1 (2 1 0 none) test
 
-.print dc v(2)
-
-.dc VDS 0 10 0.1 > data.out
-.dc IG 0 4 0.1 > data.out
+*.print dc v(2)
+*sweep 5 VDS=1,5
+*dc VGS 0 5 1m >>data.out
+*go
 
 .end
 

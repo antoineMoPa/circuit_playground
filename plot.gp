@@ -1,2 +1,2 @@
-plot "data.out" using 1:2 with lines
+plot "data.out" index 0 with lines
 pause -1 
