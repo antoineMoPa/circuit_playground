@@ -1,10 +1,8 @@
-include /home/antoine/spice_models/2N7000.mod
-
 get output.net
 
 print dc v(2)
 sweep 5 VDS=1,5
-dc IGS 1u 5u 0.1u >> data.out
+dc IGS 1u 5u 0.01u >> data.out
 go
 
 end
