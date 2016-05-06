@@ -2,8 +2,8 @@
 get output.net
 
 print dc i(rd)
-sweep 5 VDS=0,7m
-dc IGS 0 5e-6 1e-8 >> data.out
+sweep 12 VDS=0,12m
+dc IGS 0 0.5n 0.001n >> data.out
 go
 
 end

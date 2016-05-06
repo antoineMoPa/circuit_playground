@@ -1,9 +1,10 @@
 * empty line for gnucap to work
-.model test nmos
+.include lib/not_open_source/bs170.lib
+
 * Spice netlister for gnetlist
 RD 3 2 1
 IGS 0 1 1mA
 VDS 3 0 DC 1V
-MQ1 (2 1 0 none) test
+XBS1701 (2 1 0) BS170
 
 .END
