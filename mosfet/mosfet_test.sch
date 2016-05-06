@@ -5,7 +5,11 @@ C 49500 47000 1 0 0 nmos-3.sym
 T 50100 47500 5 10 0 0 0 0 1
 device=NMOS_TRANSISTOR
 T 50200 47600 5 10 1 1 0 0 1
-refdes=Q1
+refdes=MQ1
+T 50200 47200 5 10 1 0 0 0 1
+value=test
+T 50200 46900 5 10 1 0 0 0 1
+model=nmos
 }
 C 47000 46800 1 0 0 vdc-1.sym
 {
@@ -25,7 +29,7 @@ C 49000 46300 1 90 0 current-1.sym
 T 48000 46900 5 10 0 0 90 0 1
 device=CURRENT_SOURCE
 T 48500 46600 5 10 1 1 90 0 1
-refdes=IG
+refdes=IGS
 T 49000 46300 5 10 1 0 0 0 1
 value=1m
 }
