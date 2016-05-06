@@ -1,5 +1,5 @@
 rm data.out
-gnucap < script.gcap
+gnucap < sim.gcap
 sed -e "s/#.*$//g" data.out > data.out_temp
 mv data.out_temp data.out
 
