@@ -1,9 +1,9 @@
 
 get output.net
 
-print dc v(2)
-sweep 5 VDS=1,5
-dc IGS 1u 5u 0.01u >> data.out
+print dc i(rd)
+sweep 5 VDS=0,7m
+dc IGS 0 5e-6 1e-8 >> data.out
 go
 
 end
