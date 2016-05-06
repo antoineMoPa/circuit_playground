@@ -6,8 +6,11 @@
 * Documentation at http://www.brorson.com/gEDA/SPICE/   *
 *********************************************************
 *==============  Begin SPICE netlist of main design ============
+
+.model test nmos
+
 RD 3 2 1  
-IG 0 1 1m
+IGS 0 1 1m
 VDS 3 0 DC 1V
-MQ1 2 1 0 unknown 
+MQ1 (2 1 0 none) test
 .end
