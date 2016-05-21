@@ -1,7 +1,8 @@
 rm data.out
-gnucap < sim.gcap
+
+ngspice -i sim.ngspice
 
 #faster
-gnuplot plot.gp
+#gnuplot plot.gp
 # slower but nicer
 #python3 plot.py

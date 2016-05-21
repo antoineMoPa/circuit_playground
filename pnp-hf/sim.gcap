@@ -1,7 +1,11 @@
 
+option nowarn
+
 get pnp.net
 
-plot ac v(4)
-ac 1 1e6 10 Decade
+* vin: 2
+* vout: 7
+print ac db(v(7)/v(2))
+ac 1 2K decade 2
 
 end

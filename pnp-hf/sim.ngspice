@@ -1,0 +1,13 @@
+* sim.ngspice
+
+.control
+source pnp.net
+
+ac dec 3 10 100000meg
+
+*gnuplot plot.plt db(mag(v(1))/mag(v(3)))
+asciiplot db(mag(v(1))/mag(v(3)))
+
+.endc
+
+.end
