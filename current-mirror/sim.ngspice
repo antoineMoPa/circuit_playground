@@ -1,0 +1,15 @@
+* sim.ngspice
+
+.control
+source circuit.net
+
+op
+
+print v(4)/5K
+
+*gnuplot plot.plt c(3) c(4)
+*asciiplot c(3) c(4)
+
+.endc
+
+.end
