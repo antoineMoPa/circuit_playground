@@ -1,6 +1,6 @@
 rm data.out
 
-ngspice -i sim.ngspice
+gnucap -b sim.spice
 
 #faster
 #gnuplot plot.gp

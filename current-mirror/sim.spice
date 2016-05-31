@@ -1,0 +1,9 @@
+* sim.spice
+
+.get circuit.net
+
+*.print op v(4) i(RL)
+.print op v(RL) i(RL)
+
+.op 27
+
