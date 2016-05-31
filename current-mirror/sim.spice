@@ -2,8 +2,6 @@
 
 .get circuit.net
 
-*.print op v(4) i(RL)
-.print op v(RL) i(RL)
+.print op v(4) i(RL)
 
-.op 27
-
+.op

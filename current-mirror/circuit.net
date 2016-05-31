@@ -2,10 +2,9 @@
 
 *----------------------------------------------
 *	GNUCAP - NETLIST
-.options OUT=120 
+.options OUT=80 
 *------------- Models -------------------------
-.model simplebjt PNP (BF=200 BR=4)
-
+.model simplebjt PNP (BF=200 BR=4 )
 
 *------------- Circuit Description-------------
 *V1 0 2 dc 0.0 ac 1.0 sin(0.0 1.0 1.0 0 0) 
@@ -15,7 +14,7 @@ V2 1 0 dc 10V
 Q1 3 2 1 simplebjt
 Q2 4 2 1 simplebjt
 
-I1 3 0 dc 1.22mA
+I1 3 0 dc 1.22m
 
 RL 4 0 2k
 
