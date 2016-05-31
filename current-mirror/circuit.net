@@ -11,11 +11,11 @@
 V2 1 0 dc 10V
 
 * c b e
-Q1 3 2 1 simplebjt
+Q1 2 2 1 simplebjt
 Q2 4 2 1 simplebjt
 
-I1 3 0 dc 1.22m
+I1 2 0 dc 1.22m
 
-RL 4 0 2k
+RL 4 0 1k
 
 .end
